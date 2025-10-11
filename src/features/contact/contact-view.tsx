@@ -1,6 +1,5 @@
 import { AppLayout } from "@/components/layouts";
 import { PageTitle } from "@/components/page-title";
-import { App } from "antd";
 import { ContactDetailsSection } from ".";
 
 const ContactView = () => {

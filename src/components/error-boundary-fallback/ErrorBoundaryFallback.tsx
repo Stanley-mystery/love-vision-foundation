@@ -9,8 +9,13 @@ import { Divider } from "antd";
 import { useEffect } from "react";
 import { DefaultLayout } from "@/components/layouts";
 
+type RouteError =
+  | Error
+  | { status?: number; statusText?: string; message?: string }
+  | unknown;
+
 const ErrorBoundaryFallback = () => {
-  const error: any = useRouteError();
+  const error: any = useRouteError() as RouteError;
   const navigate = useNavigate();
   const location = useLocation();
 
