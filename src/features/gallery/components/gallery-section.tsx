@@ -9,19 +9,21 @@ import {
 import GLightbox from "glightbox";
 
 import GalleryImage1 from "@/assets/images/galleryImage1.jpeg";
-import GalleryImage2 from "@/assets/images/galleryImage2.jpeg";
-import GalleryImage3 from "@/assets/images/galleryImage3.jpeg";
-import GalleryImage4 from "@/assets/images/gallleryImage4.jpeg";
-import GalleryImage5 from "@/assets/images/galleryImage5.jpeg";
-import GalleryImage6 from "@/assets/images/galleryImage6.jpeg";
+// import GalleryImage2 from "@/assets/images/galleryImage2.jpeg";
+// import GalleryImage3 from "@/assets/images/galleryImage3.jpeg";
+// import GalleryImage4 from "@/assets/images/gallleryImage4.jpeg";
+// import GalleryImage5 from "@/assets/images/galleryImage5.jpeg";
+// import GalleryImage6 from "@/assets/images/galleryImage6.jpeg";
 
 const galleryImages = [
   GalleryImage1,
-  GalleryImage2,
-  GalleryImage3,
-  GalleryImage4,
-  GalleryImage5,
-  GalleryImage6,
+  GalleryImage1,
+  GalleryImage1,
+  GalleryImage1,
+  GalleryImage1,
+  GalleryImage1,
+  GalleryImage1,
+  GalleryImage1,
 ];
 
 const GallerySection: React.FC = () => {
