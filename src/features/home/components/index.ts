@@ -1,0 +1,8 @@
+export { default as HomePageView } from "./home-page-view";
+export { default as HomeHeroSection } from "./home-hero-section";
+export { default as HomeAboutsSection } from "./home-about-section";
+export { default as HomeMainAboutSection } from "./home-main-about-section";
+export { default as HomePartnersProfileSection } from "./home-partners-profile-section";
+export { default as HomePartnersProfileModal } from "./home-partners-profile-modal";
+export { default as HomeTestimonialsSection } from "./home-testimonials-section";
+export { default as HomeClientsSection } from "./home-clients-section";
