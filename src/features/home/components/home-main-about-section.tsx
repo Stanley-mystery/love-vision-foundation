@@ -10,7 +10,7 @@ const HomeMainAboutSection = () => {
         <h2>About</h2>
         <p>
           <span>Find Out More</span>
-          <span className="description-title">About Love House Vision</span>
+          <span className="description-title">About Love Vision Foundation</span>
         </p>
       </div>
       {/* End Section Title */}
@@ -41,9 +41,9 @@ const HomeMainAboutSection = () => {
             data-aos-delay="200"
           >
             <div className="about-content ps-0 ps-lg-3">
-              <h3>About Love House Vision</h3>
+              <h3>About Love Vision Foundation</h3>
               <p className="fst-italic">
-                Love House Vision is committed to serving as a channel of
+                Love Vision Foundation is committed to serving as a channel of
                 blessing and restoration for individuals experiencing vision
                 challenges.
               </p>
