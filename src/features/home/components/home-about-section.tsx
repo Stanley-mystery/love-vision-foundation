@@ -1,7 +1,14 @@
+import { useEffect } from "react";
 import Image1 from "@/assets/images/homeAbout1.jpg";
 import Image2 from "@/assets/images/homeAbout2.jpg";
 import Image3 from "@/assets/images/homeAbout3.jpg";
+import PureCounter from "@srexi/purecounterjs";
+
 const HomeAboutSection = () => {
+  useEffect(() => {
+    new PureCounter();
+  }, []);
+
   return (
     <section id="home-about" className="home-about section">
       <div
@@ -31,6 +38,7 @@ const HomeAboutSection = () => {
         </div>
 
         <div className="row align-items-center gy-5">
+          {/* Image grid section */}
           <div
             className="col-lg-7 aos-init aos-animate"
             data-aos="fade-right"
@@ -67,6 +75,7 @@ const HomeAboutSection = () => {
             </div>
           </div>
 
+          {/* Content section */}
           <div
             className="col-lg-5 aos-init aos-animate"
             data-aos="fade-left"
@@ -87,52 +96,33 @@ const HomeAboutSection = () => {
                 </div>
               </div>
 
+              {/* Feature list */}
               <div className="feature-list">
-                <div className="feature-item">
-                  <div className="feature-icon">
-                    <i className="bi bi-check-circle-fill"></i>
+                {[
+                  "Free cataract and glaucoma surgeries for the underserved",
+                  "Community-based vision screening and education",
+                  "Partnerships with medical professionals and hospitals",
+                  "Faith-driven commitment to restoring lives through sight",
+                ].map((feature, index) => (
+                  <div className="feature-item" key={index}>
+                    <div className="feature-icon">
+                      <i className="bi bi-check-circle-fill"></i>
+                    </div>
+                    <div className="feature-text">{feature}</div>
                   </div>
-                  <div className="feature-text">
-                    Free cataract and glaucoma surgeries for the underserved
-                  </div>
-                </div>
-                <div className="feature-item">
-                  <div className="feature-icon">
-                    <i className="bi bi-check-circle-fill"></i>
-                  </div>
-                  <div className="feature-text">
-                    Community-based vision screening and education
-                  </div>
-                </div>
-                <div className="feature-item">
-                  <div className="feature-icon">
-                    <i className="bi bi-check-circle-fill"></i>
-                  </div>
-                  <div className="feature-text">
-                    Partnerships with medical professionals and hospitals
-                  </div>
-                </div>
-                <div className="feature-item">
-                  <div className="feature-icon">
-                    <i className="bi bi-check-circle-fill"></i>
-                  </div>
-                  <div className="feature-text">
-                    Faith-driven commitment to restoring lives through sight
-                  </div>
-                </div>
+                ))}
               </div>
 
-              <div className="metrics-row">
+              {/* Animated metrics */}
+              <div className="metrics-row mt-4">
                 <div className="metric-box">
                   <div className="metric-number">
                     <span
                       className="purecounter"
                       data-purecounter-start="0"
                       data-purecounter-end="100"
-                      data-purecounter-duration="0"
-                    >
-                      100
-                    </span>
+                      data-purecounter-duration="2"
+                    ></span>
                     %
                   </div>
                   <div className="metric-label">Hope Restored</div>
@@ -142,24 +132,22 @@ const HomeAboutSection = () => {
                     <span
                       className="purecounter"
                       data-purecounter-start="0"
-                      data-purecounter-end="35"
-                      data-purecounter-duration="0"
-                    >
-                      35
-                    </span>
+                      data-purecounter-end="20"
+                      data-purecounter-duration="2"
+                    ></span>
                     K+
                   </div>
                   <div className="metric-label">Sight Restored</div>
                 </div>
               </div>
 
-              <div className="action-buttons">
+              {/* CTA buttons */}
+              <div className="action-buttons mt-4">
                 <a href="#" className="btn-explore">
                   Learn More
                 </a>
                 <a href="#" className="btn-contact">
-                  <i className="bi bi-heart"></i>
-                  Donate Now
+                  <i className="bi bi-heart"></i> Donate Now
                 </a>
               </div>
             </div>
