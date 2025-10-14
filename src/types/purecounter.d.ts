@@ -1,5 +1,5 @@
 declare module '@srexi/purecounterjs' {
   export default class PureCounter {
-    constructor(options?: Record<string, any>);
+    constructor(options?: Record<string>);
   }
 }

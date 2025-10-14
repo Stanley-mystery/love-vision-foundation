@@ -60,7 +60,7 @@ const HomeHeroSection = () => {
                       <a href="#about" className="btn btn-primary">
                         Learn More About Our Mission
                       </a>
-                      <a href="#" className="btn btn-outline">
+                      <a href="/donate" className="btn btn-outline">
                         Support the Cause
                       </a>
                     </div>

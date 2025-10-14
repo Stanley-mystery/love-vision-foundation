@@ -68,7 +68,7 @@ const Header: React.FC = () => {
           ></i>
         </nav>
 
-        <a className="btn-getstarted" href="#donate">
+        <a className="btn-getstarted" href="/donate">
           <i className="bi bi-heart-fill me-2"></i>
           Donate
         </a>

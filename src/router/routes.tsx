@@ -2,7 +2,7 @@ import type { RouteObject } from "react-router-dom";
 import { injectErrorBoundary } from "../shared/utils";
 
 import ErrorBoundaryFallback from "@/components/error-boundary-fallback/ErrorBoundaryFallback";
-import { Home, Gallery, Contact } from "@/pages";
+import { Home, Gallery, Contact, Donate } from "@/pages";
 
 const routesObject: RouteObject[] = [
   {
@@ -16,6 +16,10 @@ const routesObject: RouteObject[] = [
   {
     path: "/contact",
     element: <Contact />,
+  },
+  {
+    path: "/donate",
+    element: <Donate />,
   },
 ];
 

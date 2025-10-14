@@ -135,7 +135,7 @@ const HomeAboutSection = () => {
                       data-purecounter-end="20"
                       data-purecounter-duration="2"
                     ></span>
-                    K+
+                    K
                   </div>
                   <div className="metric-label">Sight Restored</div>
                 </div>
@@ -143,10 +143,10 @@ const HomeAboutSection = () => {
 
               {/* CTA buttons */}
               <div className="action-buttons mt-4">
-                <a href="#" className="btn-explore">
+                <a href="#about" className="btn-explore">
                   Learn More
                 </a>
-                <a href="#" className="btn-contact">
+                <a href="/donate" className="btn-contact">
                   <i className="bi bi-heart"></i> Donate Now
                 </a>
               </div>
@@ -154,6 +154,7 @@ const HomeAboutSection = () => {
           </div>
         </div>
       </div>
+      
     </section>
   );
 };
