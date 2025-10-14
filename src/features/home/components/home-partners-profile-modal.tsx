@@ -15,7 +15,10 @@ const HomePartnersProfileModal = () => {
         <div className="modal-dialog modal-xl modal-dialog-centered">
           <div className="modal-content border-0 shadow-lg rounded-4">
             <div className="modal-header border-0 bg-primary text-white rounded-top">
-              <h4 className="modal-title fw-semibold text-white" id="tomiladeModalLabel">
+              <h4
+                className="modal-title fw-semibold text-white"
+                id="tomiladeModalLabel"
+              >
                 Tomilade Adebari
               </h4>
               <button
@@ -35,18 +38,18 @@ const HomePartnersProfileModal = () => {
                   alt="Tomilade Adebari"
                 />
                 <h5 className="fw-bold mb-0">
-                  Ophthalmologist &amp; Glaucoma Specialist
+                  Comprehensive Ophthalmologist &amp; Glaucoma Specialist
                 </h5>
               </div>
 
               <div className="partner-bio">
                 <p className="lead text-muted">
-                  An enthusiastic child of God with a heart to spread the gospel
-                  of Jesus Christ through various means. She began her ministry
-                  journey as a teenager, serving faithfully in prayer and
-                  intercession. With a deep passion for praying the Word of God,
-                  she believes in the power of prayer to transform lives and
-                  nations.
+                  Tomilade Adebari is an enthusiastic child of God with a heart
+                  to spread the gospel of Jesus Christ through various means.
+                  She began her ministry journey as a teenager, serving
+                  faithfully in prayer and intercession. With a deep passion for
+                  praying the Word of God, she believes in the power of prayer
+                  to transform lives and nations.
                 </p>
                 <p>
                   Over the years, Tomilade has also served in youth ministry
@@ -55,10 +58,9 @@ const HomePartnersProfileModal = () => {
                 </p>
                 <p>
                   Beyond ministry, Tomilade is a board-certified Comprehensive
-                  Ophthalmologist and Glaucoma Specialist, as well as the
-                  Residency Site Director for Temple University Ophthalmology.
-                  Her medical expertise reflects her commitment to restoring
-                  sight both physically and spiritually.
+                  Ophthalmologist and Glaucoma Specialist. Her medical expertise
+                  reflects her commitment to restoring sight both physically and
+                  spiritually.
                 </p>
                 <p>
                   Together with her husband, Olufunbi, Tomilade co-founded Love
@@ -85,7 +87,10 @@ const HomePartnersProfileModal = () => {
         <div className="modal-dialog modal-xl modal-dialog-centered">
           <div className="modal-content border-0 shadow-lg rounded-4">
             <div className="modal-header border-0 bg-primary text-white rounded-top">
-              <h4 className="modal-title fw-semibold text-white" id="olufunbiModalLabel">
+              <h4
+                className="modal-title fw-semibold text-white"
+                id="olufunbiModalLabel"
+              >
                 Olufunbi Adebari
               </h4>
               <button
@@ -111,20 +116,20 @@ const HomePartnersProfileModal = () => {
 
               <div className="partner-bio">
                 <p className="lead text-muted">
-                  A seasoned technology expert with a wealth of experience in
-                  project management delivery across diverse sectors. He has
-                  consistently applied his skills to drive excellence,
-                  innovation, and measurable results in every environment he
-                  serves.
+                  Olufunbi Adebari is a seasoned technology expert with a wealth
+                  of experience in project management delivery across diverse
+                  sectors. He has consistently applied his skills to drive
+                  excellence, innovation, and measurable results in every
+                  environment he serves.
                 </p>
                 <p>
                   His professional background reflects a commitment to quality
-                  and a vision for creating lasting impact. Beyond his expertise
-                  in technology and project management, Olufunbi has a genuine
-                  passion for missions and service.
+                  and a vision for creating lasting impact.
                 </p>
                 <p>
-                  His heart is to serve both God and people, using his gifts and
+                  Beyond his expertise in technology and project management,
+                  Olufunbi has a genuine passion for missions and service. His
+                  heart is to serve both God and people, using his gifts and
                   influence as a tool to uplift lives and communities. He
                   believes strongly in aligning professional excellence with
                   Kingdom purpose.

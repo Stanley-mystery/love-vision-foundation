@@ -135,7 +135,7 @@ const HomeAboutSection = () => {
                       data-purecounter-end="20"
                       data-purecounter-duration="2"
                     ></span>
-                    K
+                    +
                   </div>
                   <div className="metric-label">Sight Restored</div>
                 </div>
