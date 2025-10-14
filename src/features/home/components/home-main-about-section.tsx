@@ -1,4 +1,5 @@
 import Image1 from "@/assets/images/aboutbg.webp";
+
 const HomeMainAboutSection = () => {
   return (
     <section id="about" className="about section light-background">
@@ -43,12 +44,34 @@ const HomeMainAboutSection = () => {
             <div className="about-content ps-0 ps-lg-3">
               <h3>About Love Vision Foundation</h3>
               <p className="fst-italic">
-                Love Vision Foundation is committed to serving as a channel of
-                blessing and restoration for individuals experiencing vision
-                challenges.
+                Love Vision Foundation was birthed in 2021 as a divine platform
+                through which God desired to reach His people. From the
+                beginning, we have carried a clear mandate: to be a channel of
+                blessing and restoration to individuals facing vision challenges.
               </p>
 
-              <ul>
+              <p>
+                God placed it in our hearts to serve those suffering from eye
+                conditions such as cataracts, glaucoma, and other forms of
+                visual impairment. Our mission is not only to bring physical
+                relief but also to extend God’s love and hope to those in need.
+              </p>
+
+              <p>
+                In 2023, Love Vision Foundation was officially registered,
+                marking a significant milestone in fulfilling the vision God
+                entrusted to us. Since then, we have continued to grow as a
+                vessel of compassion, support, and healing for communities.
+              </p>
+
+              <p>
+                At Love Vision Foundation, we believe that restoring sight goes
+                beyond physical healing—it is about transforming lives,
+                restoring dignity, and helping people see the future God has
+                planned for them.
+              </p>
+
+              <ul className="mt-4">
                 <li>
                   <i className="bi bi-lightbulb"></i>
                   <div>
@@ -88,11 +111,11 @@ const HomeMainAboutSection = () => {
                 </li>
               </ul>
 
-              <p>
+              <p className="mt-3">
                 Through our outreach programs, free cataract and glaucoma
                 surgeries, and faith-driven service, we continue to bring light
-                where there is darkness — sharing the love of Christ by
-                restoring sight and transforming lives one person at a time.
+                where there is darkness—sharing the love of Christ by restoring
+                sight and transforming lives one person at a time.
               </p>
             </div>
           </div>
@@ -101,4 +124,5 @@ const HomeMainAboutSection = () => {
     </section>
   );
 };
+
 export default HomeMainAboutSection;
