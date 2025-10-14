@@ -35,7 +35,13 @@ const HomeClientsSection = () => {
         >
           {clients.map((client, index) => (
             <SwiperSlide key={index}>
-              <img src={client} className="img-fluid" alt={`Client ${index}`} />
+              <a href="https://eyefoundationhospital.com/">
+                <img
+                  src={client}
+                  className="img-fluid"
+                  alt={`Client ${index}`}
+                />
+              </a>
             </SwiperSlide>
           ))}
         </Swiper>
