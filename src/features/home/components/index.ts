@@ -6,3 +6,4 @@ export { default as HomePartnersProfileSection } from "./home-partners-profile-s
 export { default as HomePartnersProfileModal } from "./home-partners-profile-modal";
 export { default as HomeTestimonialsSection } from "./home-testimonials-section";
 export { default as HomeClientsSection } from "./home-clients-section";
+export { default as HomeImpacts } from "./home-impacts";

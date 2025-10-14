@@ -1030,6 +1030,63 @@ section,
   margin: 0;
 }
 
+.hero-features {
+  background: var(--surface-color);
+  padding: 4rem 0;
+  border-top: 1px solid
+    color-mix(in srgb, var(--default-color), transparent 90%);
+}
+
+.hero-features .feature-item {
+  text-align: center;
+  padding: 2rem 1rem;
+  transition: all 0.3s ease;
+}
+
+.hero-features .feature-item:hover {
+  transform: translateY(-5px);
+}
+
+.hero-features .feature-item .icon {
+  width: 80px;
+  height: 80px;
+  background: color-mix(in srgb, var(--accent-color), transparent 90%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.hero-features .feature-item .icon i {
+  font-size: 2rem;
+  color: var(--accent-color);
+}
+
+.hero-features .feature-item h4 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  color: var(--heading-color);
+}
+
+.hero-features .feature-item p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: color-mix(in srgb, var(--default-color), transparent 30%);
+  margin: 0;
+}
+
+.hero-features .feature-item:hover .icon {
+  background: var(--accent-color);
+  transform: scale(1.1);
+}
+
+.hero-features .feature-item:hover .icon i {
+  color: var(--contrast-color);
+}
+
 /*--------------------------------------------------------------
 # Gallery Slider Section
 --------------------------------------------------------------*/
