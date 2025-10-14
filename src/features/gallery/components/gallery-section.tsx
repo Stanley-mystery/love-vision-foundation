@@ -27,11 +27,14 @@ const GallerySection: React.FC = () => {
 
       const filters = document.querySelectorAll(".gallery-filters li");
       filters.forEach((filter) => {
-        filter.addEventListener("click", function () {
+        filter.addEventListener("click", (e) => {
           filters.forEach((el) => el.classList.remove("filter-active"));
-          this.classList.add("filter-active");
-          const filterValue = this.getAttribute("data-filter");
-          iso.arrange({ filter: filterValue });
+
+          const target = e.currentTarget as HTMLElement;
+          target.classList.add("filter-active");
+
+          const filterValue = target.getAttribute("data-filter");
+          iso.arrange({ filter: filterValue ?? "" });
         });
       });
     }
