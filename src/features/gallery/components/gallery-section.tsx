@@ -1,34 +1,15 @@
 import React, { useEffect } from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import {
-  Navigation,
-  Pagination,
-  Autoplay,
-  EffectCoverflow,
-} from "swiper/modules";
 import GLightbox from "glightbox";
+import Isotope from "isotope-layout";
 
+// Import your images
 import GalleryImage1 from "@/assets/images/galleryImage1.jpeg";
-// import GalleryImage2 from "@/assets/images/galleryImage2.jpeg";
-// import GalleryImage3 from "@/assets/images/galleryImage3.jpeg";
-// import GalleryImage4 from "@/assets/images/gallleryImage4.jpeg";
-// import GalleryImage5 from "@/assets/images/galleryImage5.jpeg";
-// import GalleryImage6 from "@/assets/images/galleryImage6.jpeg";
-
-const galleryImages = [
-  GalleryImage1,
-  GalleryImage1,
-  GalleryImage1,
-  GalleryImage1,
-  GalleryImage1,
-  GalleryImage1,
-  GalleryImage1,
-  GalleryImage1,
-];
+import GalleryImage2 from "@/assets/images/galleryImage2.jpeg";
+import GalleryImage3 from "@/assets/images/galleryImage3.jpeg";
 
 const GallerySection: React.FC = () => {
-  // Initialize Glightbox after render
   useEffect(() => {
+    // Initialize GLightbox
     const lightbox = GLightbox({
       selector: ".glightbox",
       touchNavigation: true,
@@ -36,67 +17,127 @@ const GallerySection: React.FC = () => {
       zoomable: true,
     });
 
+    // Initialize Isotope filtering
+    const galleryGrid = document.querySelector(".gallery-grid");
+    if (galleryGrid) {
+      const iso = new Isotope(galleryGrid, {
+        itemSelector: ".gallery-item",
+        layoutMode: "masonry",
+      });
+
+      const filters = document.querySelectorAll(".gallery-filters li");
+      filters.forEach((filter) => {
+        filter.addEventListener("click", function () {
+          filters.forEach((el) => el.classList.remove("filter-active"));
+          this.classList.add("filter-active");
+          const filterValue = this.getAttribute("data-filter");
+          iso.arrange({ filter: filterValue });
+        });
+      });
+    }
+
     return () => {
-      lightbox.destroy(); // cleanup on unmount
+      lightbox.destroy();
     };
   }, []);
 
   return (
-    <section id="gallery-slider" className="gallery-slider section">
-      <div
-        className="container aos-init aos-animate"
-        data-aos="fade-up"
-        data-aos-delay="100"
-      >
-        <div className="gallery-container">
-          <Swiper
-            modules={[Navigation, Pagination, Autoplay, EffectCoverflow]}
-            effect="coverflow"
-            grabCursor={true}
-            centeredSlides={true}
-            slidesPerView="auto"
-            coverflowEffect={{
-              rotate: 50,
-              stretch: 0,
-              depth: 100,
-              modifier: 1,
-              slideShadows: true,
-            }}
-            autoplay={{ delay: 4000 }}
-            pagination={{ clickable: true }}
-            navigation
-            loop
-            speed={800}
-            breakpoints={{
-              320: { slidesPerView: 1, spaceBetween: 10 },
-              768: { slidesPerView: 2, spaceBetween: 20 },
-              1024: { slidesPerView: 3, spaceBetween: 30 },
-            }}
-            className="swiper-coverflow"
+    <section id="gallery" className="gallery section py-5">
+      <div className="container" data-aos="fade-up" data-aos-delay="100">
+        {/* Tabs */}
+        <ul
+          className="gallery-filters isotope-filters d-flex justify-content-center list-unstyled mb-5"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
+          <li
+            data-filter="*"
+            className="filter-active mx-3 px-3 py-2 rounded-pill"
+            style={{ cursor: "pointer" }}
           >
-            {galleryImages.map((img, i) => (
-              <SwiperSlide key={i}>
-                <div className="gallery-item">
-                  <div className="gallery-img">
-                    <a
-                      className="glightbox"
-                      data-gallery="images-gallery"
-                      href={img}
-                    >
-                      <img
-                        src={img}
-                        className="img-fluid"
-                        alt={`Gallery image ${i + 1}`}
-                      />
-                      <div className="gallery-overlay">
-                        <i className="bi bi-plus-circle"></i>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-              </SwiperSlide>
-            ))}
-          </Swiper>
+            All
+          </li>
+          <li
+            data-filter=".filter-children"
+            className="mx-3 px-3 py-2 rounded-pill"
+            style={{ cursor: "pointer" }}
+          >
+            Children
+          </li>
+          <li
+            data-filter=".filter-adults"
+            className="mx-3 px-3 py-2 rounded-pill"
+            style={{ cursor: "pointer" }}
+          >
+            Adults
+          </li>
+        </ul>
+
+        {/* Gallery Grid */}
+        <div
+          className="row gallery-grid isotope-container"
+          data-aos="fade-up"
+          data-aos-delay="300"
+        >
+          {/* Children */}
+          {[GalleryImage1, GalleryImage2, GalleryImage3].map((img, index) => (
+            <div
+              key={`child-${index}`}
+              className="col-xl-4 col-md-6 gallery-item isotope-item filter-children mb-4"
+            >
+              <a
+                href={img}
+                className="glightbox d-block position-relative overflow-hidden rounded-3"
+              >
+                <img
+                  src={img}
+                  alt={`Children ${index + 1}`}
+                  className="img-fluid w-100"
+                  style={{ objectFit: "cover", height: "300px" }}
+                />
+                {/* Glass overlay */}
+                <div
+                  className="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center"
+                  style={{
+                    background: "rgba(255, 255, 255, 0.2)",
+                    backdropFilter: "blur(6px)",
+                    opacity: 0,
+                    transition: "opacity 0.3s ease",
+                  }}
+                ></div>
+              </a>
+            </div>
+          ))}
+
+          {/* Adults */}
+          {[GalleryImage2, GalleryImage3, GalleryImage1].map((img, index) => (
+            <div
+              key={`adult-${index}`}
+              className="col-xl-4 col-md-6 gallery-item isotope-item filter-adults mb-4"
+            >
+              <a
+                href={img}
+                className="glightbox d-block position-relative overflow-hidden rounded-3"
+              >
+                <img
+                  src={img}
+                  alt={`Adults ${index + 1}`}
+                  className="img-fluid w-100"
+                  style={{ objectFit: "cover", height: "300px" }}
+                />
+                {/* Glass overlay */}
+                <div
+                  className="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center"
+                  style={{
+                    background: "rgba(255, 255, 255, 0.2)",
+                    backdropFilter: "blur(6px)",
+                    opacity: 0,
+                    transition: "opacity 0.3s ease",
+                  }}
+                ></div>
+              </a>
+            </div>
+          ))}
         </div>
       </div>
     </section>

@@ -1,6 +1,6 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
-import Image from "@/assets/images/clients.webp";
+import Image from "@/assets/images/partnersImage.png";
 
 const clients = [Image, Image, Image, Image, Image, Image, Image, Image];
 

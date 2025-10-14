@@ -22,7 +22,7 @@ declare module "*.svg" {
   const value: string;
   export default value;
 }
- 
+
 declare module "*.webp" {
   const value: string;
   export default value;
@@ -30,4 +30,20 @@ declare module "*.webp" {
 declare module "*.css" {
   const content: { [className: string]: string };
   export default content;
+}
+
+declare module "isotope-layout" {
+  export default class Isotope {
+    constructor(
+      element: Element | string,
+      options?: {
+        itemSelector?: string;
+        layoutMode?: string;
+        filter?: string;
+      }
+    );
+    arrange(opts: { filter?: string }): void;
+    reloadItems(): void;
+    layout(): void;
+  }
 }

@@ -14,6 +14,7 @@
     "antd": "^5.27.4",
     "bootstrap": "^5.3.8",
     "glightbox": "^3.3.1",
+    "isotope-layout": "^3.0.6",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "react-feather": "^2.0.10",
