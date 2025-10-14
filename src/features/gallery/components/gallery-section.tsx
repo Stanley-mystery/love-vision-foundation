@@ -4,8 +4,8 @@ import Isotope from "isotope-layout";
 
 // Import your images
 import GalleryImage1 from "@/assets/images/galleryImage1.jpeg";
-import GalleryImage2 from "@/assets/images/galleryImage2.jpeg";
-import GalleryImage3 from "@/assets/images/galleryImage3.jpeg";
+// import GalleryImage2 from "@/assets/images/galleryImage2.jpeg";
+// import GalleryImage3 from "@/assets/images/galleryImage3.jpeg";
 
 const GallerySection: React.FC = () => {
   useEffect(() => {
@@ -83,7 +83,7 @@ const GallerySection: React.FC = () => {
           data-aos-delay="300"
         >
           {/* Children */}
-          {[GalleryImage1, GalleryImage2, GalleryImage3].map((img, index) => (
+          {[GalleryImage1, GalleryImage1, GalleryImage1].map((img, index) => (
             <div
               key={`child-${index}`}
               className="col-xl-4 col-md-6 gallery-item isotope-item filter-children mb-4"
@@ -113,7 +113,7 @@ const GallerySection: React.FC = () => {
           ))}
 
           {/* Adults */}
-          {[GalleryImage2, GalleryImage3, GalleryImage1].map((img, index) => (
+          {[GalleryImage1, GalleryImage1, GalleryImage1].map((img, index) => (
             <div
               key={`adult-${index}`}
               className="col-xl-4 col-md-6 gallery-item isotope-item filter-adults mb-4"
