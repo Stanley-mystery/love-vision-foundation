@@ -32,6 +32,12 @@ declare module "*.css" {
   export default content;
 }
 
+declare module "*.pdf" {
+  const src: string;
+  export default src;
+}
+
+
 declare module "isotope-layout" {
   export default class Isotope {
     constructor(

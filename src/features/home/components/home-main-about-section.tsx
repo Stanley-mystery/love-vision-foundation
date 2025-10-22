@@ -1,4 +1,4 @@
-import Image1 from "@/assets/images/aboutbg.webp";
+import Image1 from "@/assets/images/love-vision-image.png";
 
 const HomeMainAboutSection = () => {
   return (
@@ -10,8 +10,10 @@ const HomeMainAboutSection = () => {
       >
         <h2>About</h2>
         <p>
-          <span>Find Out More</span>
-          <span className="description-title">About Love Vision Foundation</span>
+          <span>Find Out More</span>{" "}
+          <span className="description-title">
+            About Love Vision Foundation
+          </span>
         </p>
       </div>
       {/* End Section Title */}
@@ -47,7 +49,8 @@ const HomeMainAboutSection = () => {
                 Love Vision Foundation was birthed in 2021 as a divine platform
                 through which God desired to reach His people. From the
                 beginning, we have carried a clear mandate: to be a channel of
-                blessing and restoration to individuals facing vision challenges.
+                blessing and restoration to individuals facing vision
+                challenges.
               </p>
 
               <p>

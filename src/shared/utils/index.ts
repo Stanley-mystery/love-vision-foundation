@@ -11,7 +11,7 @@ export const injectErrorBoundary = (data: RouteObject[], errorElement: ReactNode
   return data;
 };
 
-export const validatePhoneNumber = (_: unknown, value: string) => {
+export const validatePhoneNvalidatePhoneNumberumber = (_: unknown, value: string) => {
   switch (true) {
     case !value:
       return Promise.reject(new Error('Please input your phone number'));

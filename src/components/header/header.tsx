@@ -10,8 +10,8 @@ const Header: React.FC = () => {
   };
   const HeaderLinks = [
     { name: "Home", href: "/" },
-    // { name: "About", href: "#about" },
     { name: "Gallery", href: "/gallery" },
+    { name: "Reports", href: "/reports" },
     { name: "Contact", href: "/contact" },
   ];
 

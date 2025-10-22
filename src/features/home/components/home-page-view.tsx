@@ -6,6 +6,7 @@ import {
   HomeTestimonialsSection,
   HomeHeroSection,
   HomeImpacts,
+  QuickActionSection,
 } from ".";
 import AppLayout from "@/components/layouts/app-layout";
 function HomePageView() {
@@ -18,6 +19,7 @@ function HomePageView() {
       <HomePartnersProfileSection />
       <HomeTestimonialsSection />
       <HomeClientsSection />
+      <QuickActionSection />
     </AppLayout>
   );
 }

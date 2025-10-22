@@ -43,7 +43,7 @@ const HomePartnersProfileModal = () => {
               </div>
 
               <div className="partner-bio">
-                <p className="lead text-muted">
+                <p>
                   Tomilade Adebari is an enthusiastic child of God with a heart
                   to spread the gospel of Jesus Christ through various means.
                   She began her ministry journey as a teenager, serving
@@ -115,7 +115,7 @@ const HomePartnersProfileModal = () => {
               </div>
 
               <div className="partner-bio">
-                <p className="lead text-muted">
+                <p>
                   Olufunbi Adebari is a seasoned technology expert with a wealth
                   of experience in project management delivery across diverse
                   sectors. He has consistently applied his skills to drive

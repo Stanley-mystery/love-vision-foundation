@@ -22,7 +22,7 @@ const HomeAboutSection = () => {
             data-aos="fade-up"
             data-aos-delay="150"
           >
-            <h2 className="section-heading">
+            <h2 className="">
               Committed to Offering the Best in Vision Health
             </h2>
             <p className="lead-description">

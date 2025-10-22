@@ -7,8 +7,8 @@ const HomePartnersProfileSection = () => {
       <section id="team" className="team section light-background">
         <div className="container section-title" data-aos="fade-up">
           <p>
-            <span>Partners</span>
-            <span className="description-title">Profile</span>
+            <span>Growth</span>
+            <span className="description-title">Partners</span>
           </p>
         </div>
 
