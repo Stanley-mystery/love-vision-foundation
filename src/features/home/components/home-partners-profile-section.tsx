@@ -1,6 +1,7 @@
 import Image1 from "@/assets/images/partner2.webp";
 import Image2 from "@/assets/images/partner1.webp";
 import HomePartnersProfileModal from "./home-partners-profile-modal";
+
 const HomePartnersProfileSection = () => {
   return (
     <>

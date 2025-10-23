@@ -35,7 +35,7 @@ const HomeClientsSection = () => {
         >
           {clients.map((client, index) => (
             <SwiperSlide key={index}>
-              <a href="https://eyefoundationhospital.com/">
+              <a href="https://eyefoundationhospital.com/" target="_blank">
                 <img
                   src={client}
                   className="img-fluid"
