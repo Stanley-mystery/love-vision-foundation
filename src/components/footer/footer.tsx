@@ -23,10 +23,10 @@ const Footer = () => {
             </div>
           </div>
         </div>
-      </div> */}
+      </div>  */}
 
       <div className="container footer-top">
-        <div className="row gy-4">
+        <div className="row gy-4 justify-content-center">
           <div className="col-lg-4 col-md-6 footer-about">
             <a href="index.html" className="d-flex align-items-center">
               <span className="sitename">Love Vision Foundation</span>
@@ -57,7 +57,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div className="col-lg-4 col-md-12">
+          {/* <div className="col-lg-4 col-md-12">
             <h4>Follow Us</h4>
             <p>
               Goldline Shipping is a global supplier of transport and logistics
@@ -83,14 +83,14 @@ const Footer = () => {
                 <i className="bi bi-youtube"></i>
               </a>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
 
       <div className="container copyright text-center mt-4">
         <p>
           © <span>Copyright</span>
-          <strong className="px-1 sitename">Goldline Shipping</strong>
+          <strong className="px-1 sitename">Love Vision Foundation</strong>
           <span>All Rights Reserved</span>
         </p>
       </div>
