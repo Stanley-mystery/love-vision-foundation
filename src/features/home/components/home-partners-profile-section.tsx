@@ -8,7 +8,7 @@ const HomePartnersProfileSection = () => {
         <div className="container section-title" data-aos="fade-up">
           <p>
             <span>Growth</span>
-            <span className="description-title">Partners</span>
+            <span className="description-title"> Partners</span>
           </p>
         </div>
 

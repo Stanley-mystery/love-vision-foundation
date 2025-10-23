@@ -24,7 +24,11 @@ const HomeHeroSection = () => {
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
               nisi ut aliquip ex ea commodo consequat.
             </p>
-            <a href="#featured-services" className="btn-get-started">
+            <a
+              href="#featured-services"
+              className="btn-get-started d-flex  align-items-center gap-2"
+            >
+              <i className="bi bi-heart-fill"></i>
               Donate
             </a>
           </div>
@@ -41,7 +45,11 @@ const HomeHeroSection = () => {
               omnis voluptas assumenda est, omnis dolor repellendus. Temporibus
               autem quibusdam et aut officiis debitis aut.
             </p>
-            <a href="#featured-services" className="btn-get-started">
+            <a
+              href="#featured-services"
+              className="btn-get-started d-flex  align-items-center gap-2"
+            >
+              <i className="bi bi-heart-fill"></i>
               Donate
             </a>
           </div>
@@ -58,7 +66,11 @@ const HomeHeroSection = () => {
               magni dolores eos qui ratione voluptatem sequi nesciunt omnis iste
               natus error sit voluptatem accusantium.
             </p>
-            <a href="#featured-services" className="btn-get-started">
+            <a
+              href="#featured-services"
+              className="btn-get-started d-flex  align-items-center gap-2"
+            >
+              <i className="bi bi-heart-fill"></i>
               Donate
             </a>
           </div>
