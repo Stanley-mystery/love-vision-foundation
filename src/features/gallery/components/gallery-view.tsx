@@ -1,6 +1,5 @@
 import { AppLayout } from "@/components/layouts";
 import { GallerySection } from ".";
-import { PageTitle } from "@/components/page-title";
 
 const GalleryView = () => {
   return (

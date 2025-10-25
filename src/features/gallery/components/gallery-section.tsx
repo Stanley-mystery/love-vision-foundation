@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import GLightbox from "glightbox";
 import Isotope from "isotope-layout";
+import { Link } from "react-router-dom";
 
 // Import 22 images
 import GalleryImage1 from "@/assets/images/gallery/gallery1.jpg";
@@ -26,8 +27,17 @@ import GalleryImage20 from "@/assets/images/gallery/gallery20.jpg";
 import GalleryImage21 from "@/assets/images/gallery/gallery21.jpg";
 import GalleryImage22 from "@/assets/images/gallery/gallery22.jpg";
 
-const GallerySection: React.FC = () => {
+interface GallerySectionProps {
+  limit?: number;
+  showViewMore?: boolean;
+}
+
+const GallerySection: React.FC<GallerySectionProps> = ({
+  limit,
+  showViewMore,
+}) => {
   useEffect(() => {
+    // Initialize GLightbox
     const lightbox = GLightbox({
       selector: ".glightbox",
       touchNavigation: true,
@@ -35,71 +45,102 @@ const GallerySection: React.FC = () => {
       zoomable: true,
     });
 
+    // Initialize Isotope after images load
     const galleryGrid = document.querySelector(".gallery-grid");
-    if (galleryGrid) {
-      const iso = new Isotope(galleryGrid, {
-        itemSelector: ".gallery-item",
-        layoutMode: "masonry",
-      });
+    let iso: Isotope | null = null;
 
-      const filters = document.querySelectorAll(".gallery-filters li");
-      filters.forEach((filter) => {
-        filter.addEventListener("click", (e) => {
-          filters.forEach((el) => el.classList.remove("filter-active"));
-          const target = e.currentTarget as HTMLElement;
-          target.classList.add("filter-active");
-          const filterValue = target.getAttribute("data-filter");
-          iso.arrange({ filter: filterValue ?? "" });
+    const initIsotope = () => {
+      if (galleryGrid) {
+        iso = new Isotope(galleryGrid, {
+          itemSelector: ".gallery-item",
+          layoutMode: "masonry",
         });
+      }
+    };
+
+    // Wait until all images have loaded before initializing Isotope
+    const images = galleryGrid?.querySelectorAll("img");
+    if (images && images.length > 0) {
+      let loadedCount = 0;
+
+      const checkAllLoaded = () => {
+        loadedCount++;
+        if (loadedCount === images.length) initIsotope();
+      };
+
+      images.forEach((img) => {
+        if (img.complete) {
+          checkAllLoaded();
+        } else {
+          img.addEventListener("load", checkAllLoaded);
+          img.addEventListener("error", checkAllLoaded);
+        }
       });
+    } else {
+      initIsotope();
     }
 
+    // Cleanup on unmount
     return () => {
-      lightbox.destroy();
+      try {
+        lightbox.destroy();
+      } catch (err) {
+        console.warn("GLightbox cleanup skipped:", err);
+      }
+
+      try {
+        if (iso) (iso as any).destroy();
+      } catch (err) {
+        console.warn("Isotope cleanup skipped:", err);
+      }
     };
-  }, []);
+  }, [limit, showViewMore]);
 
-  const childrenImages = [
-    GalleryImage1,
-    GalleryImage2,
-    GalleryImage3,
-    GalleryImage4,
-    GalleryImage5,
-    GalleryImage6,
-    GalleryImage7,
-    GalleryImage8,
-    GalleryImage9,
-    GalleryImage10,
-    GalleryImage11,
+  // Grouped images
+  const allImages = [
+    ...[
+      GalleryImage1,
+      GalleryImage2,
+      GalleryImage3,
+      GalleryImage4,
+      GalleryImage5,
+      GalleryImage6,
+      GalleryImage7,
+      GalleryImage8,
+      GalleryImage9,
+      GalleryImage10,
+      GalleryImage11,
+    ].map((img) => ({ src: img, category: "children" })),
+    ...[
+      GalleryImage12,
+      GalleryImage13,
+      GalleryImage14,
+      GalleryImage15,
+      GalleryImage16,
+      GalleryImage17,
+      GalleryImage18,
+      GalleryImage19,
+      GalleryImage20,
+      GalleryImage21,
+      GalleryImage22,
+    ].map((img) => ({ src: img, category: "adults" })),
   ];
 
-  const adultImages = [
-    GalleryImage12,
-    GalleryImage13,
-    GalleryImage14,
-    GalleryImage15,
-    GalleryImage16,
-    GalleryImage17,
-    GalleryImage18,
-    GalleryImage19,
-    GalleryImage20,
-    GalleryImage21,
-    GalleryImage22,
-  ];
+  const displayedImages = limit ? allImages.slice(0, limit) : allImages;
 
-  const renderGalleryItems = (images: string[], category: string) =>
-    images.map((img, index) => (
+  const renderGalleryItems = () =>
+    displayedImages.map((item, index) => (
       <div
-        key={`${category}-${index}`}
-        className={`col-xl-4 col-md-6 gallery-item isotope-item filter-${category} mb-4`}
+        key={`${item.category}-${index}`}
+        className={`col-xl-4 col-md-6 gallery-item isotope-item filter-${item.category} mb-4`}
       >
         <a
-          href={img}
+          href={item.src}
           className="glightbox d-block position-relative overflow-hidden rounded-3"
         >
           <img
-            src={img}
-            alt={`${category} ${index + 1}`}
+            src={item.src}
+            alt={`${item.category} ${index + 1}`}
             className="img-fluid w-100"
             style={{ objectFit: "cover", height: "300px" }}
           />
@@ -119,34 +160,7 @@ const GallerySection: React.FC = () => {
   return (
     <section id="gallery" className="gallery section py-5">
       <div className="container" data-aos="fade-up" data-aos-delay="100">
-        {/* Filter Tabs */}
-        <ul
-          className="gallery-filters isotope-filters d-flex justify-content-center list-unstyled mb-5"
-          data-aos="fade-up"
-          data-aos-delay="200"
-        >
-          {/* <li
-            data-filter="*"
-            className="filter-active mx-3 px-3 py-2 rounded-pill"
-            style={{ cursor: "pointer" }}
-          >
-            All
-          </li>
-          <li
-            data-filter=".filter-children"
-            className="mx-3 px-3 py-2 rounded-pill"
-            style={{ cursor: "pointer" }}
-          >
-            Children
-          </li>
-          <li
-            data-filter=".filter-adults"
-            className="mx-3 px-3 py-2 rounded-pill"
-            style={{ cursor: "pointer" }}
-          >
-            Adults
-          </li> */}
-        </ul>
+        <h2 className="text-center mb-5 fw-semibold">Our Gallery</h2>
 
         {/* Gallery Grid */}
         <div
@@ -154,9 +168,19 @@ const GallerySection: React.FC = () => {
           data-aos="fade-up"
           data-aos-delay="300"
         >
-          {renderGalleryItems(childrenImages, "children")}
-          {renderGalleryItems(adultImages, "adults")}
+          {renderGalleryItems()}
         </div>
+
+        {showViewMore && (
+          <div className="text-center mt-5">
+            <Link
+              to="/gallery"
+              className="btn btn-outline-primary rounded-pill px-4 py-2"
+            >
+              View More
+            </Link>
+          </div>
+        )}
       </div>
     </section>
   );

@@ -1,3 +1,4 @@
+import { GallerySection } from "@/features/gallery/components";
 import {
   HomeAboutsSection,
   HomeClientsSection,
@@ -20,6 +21,7 @@ function HomePageView() {
       <HomeTestimonialsSection />
       <HomeClientsSection />
       <QuickActionSection />
+      <GallerySection limit={10} showViewMore />
     </AppLayout>
   );
 }

@@ -1,5 +1,5 @@
 import { AppLayout } from "@/components/layouts";
-import { PageTitle } from "@/components/page-title";
+// import { PageTitle } from "@/components/page-title";
 import {ReportsDetailsSection} from ".";
 
 const ReportsView = () => {
