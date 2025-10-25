@@ -1,6 +1,6 @@
-import HeroBg1 from "@/assets/images/love-house-group-herobg.jpg";
-import HeroBg2 from "@/assets/images/homeAbout1.jpg";
-import HeroBg3 from "@/assets/images/homeAbout2.jpg";
+import HeroBg1 from "@/assets/images/home1.jpeg";
+import HeroBg2 from "@/assets/images/home2.jpeg";
+import HeroBg3 from "@/assets/images/home3.jpeg";
 
 const HomeHeroSection = () => {
   return (
