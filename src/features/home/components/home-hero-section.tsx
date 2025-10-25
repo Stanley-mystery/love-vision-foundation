@@ -15,14 +15,16 @@ const HomeHeroSection = () => {
           <img src={HeroBg1} alt="" />
           <div className="carousel-container">
             <h2>
-              Welcome to Sailor
+              A clear mandate: to be a channel of blessing and restoration to
+              individuals facing vision challenges.
               <br />
             </h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
+              Using our gifts and influence as a tool to uplift lives and
+              communities through dedication to ensuring the foundation fulfills
+              its God-given mandate of restoring sight, bringing hope, and
+              transforming lives through practical support and the love of
+              Christ.
             </p>
             <a
               href="#featured-services"
@@ -38,12 +40,17 @@ const HomeHeroSection = () => {
         <div className="carousel-item">
           <img src={HeroBg2} alt="" />
           <div className="carousel-container">
-            <h2>At vero eos et accusamus</h2>
+            <h2>
+              A clear mandate: to be a channel of blessing and restoration to
+              individuals facing vision challenges.
+              <br />
+            </h2>
             <p>
-              Nam libero tempore, cum soluta nobis est eligendi optio cumque
-              nihil impedit quo minus id quod maxime placeat facere possimus,
-              omnis voluptas assumenda est, omnis dolor repellendus. Temporibus
-              autem quibusdam et aut officiis debitis aut.
+              Using our gifts and influence as a tool to uplift lives and
+              communities through dedication to ensuring the foundation fulfills
+              its God-given mandate of restoring sight, bringing hope, and
+              transforming lives through practical support and the love of
+              Christ.
             </p>
             <a
               href="#featured-services"
@@ -59,12 +66,17 @@ const HomeHeroSection = () => {
         <div className="carousel-item">
           <img src={HeroBg3} alt="" />
           <div className="carousel-container">
-            <h2>Temporibus autem quibusdam</h2>
+            <h2>
+              A clear mandate: to be a channel of blessing and restoration to
+              individuals facing vision challenges.
+              <br />
+            </h2>
             <p>
-              Beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia
-              voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur
-              magni dolores eos qui ratione voluptatem sequi nesciunt omnis iste
-              natus error sit voluptatem accusantium.
+              Using our gifts and influence as a tool to uplift lives and
+              communities through dedication to ensuring the foundation fulfills
+              its God-given mandate of restoring sight, bringing hope, and
+              transforming lives through practical support and the love of
+              Christ.
             </p>
             <a
               href="#featured-services"

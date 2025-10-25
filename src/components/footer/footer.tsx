@@ -110,11 +110,28 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="container copyright text-center mt-4">
+      <div className="container d-flex align-items-center justify-content-between text-center mt-4">
         <p>
           © <span>Copyright</span>
           <strong className="px-1 sitename">Love Vision Foundation</strong>
           <span>All Rights Reserved</span>
+        </p>
+
+        <p>
+          <a
+            href="https://www.instagram.com/madesignsltd/"
+            target="_blank"
+            rel="noopener noreferrer
+          "
+          className="text-decoration-none text-white"
+          >
+            © <span>Created by </span>
+            <strong className="px-1 sitename">
+              Mindfully Articulated by Designs
+            </strong>
+          </a>
+
+          {/* <span>All Rights Reserved</span> */}
         </p>
       </div>
     </footer>

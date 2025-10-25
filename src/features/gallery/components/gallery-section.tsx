@@ -99,7 +99,6 @@ const GallerySection: React.FC<GallerySectionProps> = ({
   // Grouped images
   const allImages = [
     ...[
-      GalleryImage1,
       GalleryImage2,
       GalleryImage3,
       GalleryImage4,
