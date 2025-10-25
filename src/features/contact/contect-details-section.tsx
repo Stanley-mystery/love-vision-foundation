@@ -19,7 +19,7 @@ const ContactDetailsSection = () => {
         >
           <div className="col-lg-10">
             <div className="contact-form-wrapper">
-              <h2 className="text-center mb-4">
+              <h2 className="text-center text-white mb-4">
                 We will like to connect with you.
               </h2>
 

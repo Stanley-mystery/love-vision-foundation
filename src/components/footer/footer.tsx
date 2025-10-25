@@ -56,6 +56,23 @@ const Footer = () => {
               </li>
             </ul>
           </div>
+          <div className="col-lg-2 col-md-3 footer-links">
+            <h4>Regulatory Information</h4>
+            <ul>
+              <li>
+                <i className="bi bi-chevron-right"></i>{" "}
+                <a href="/">Privacy Policy</a>
+              </li>
+              <li>
+                <i className="bi bi-chevron-right"></i>{" "}
+                <a href="/gallery">Terms of Use</a>
+              </li>
+              <li>
+                <i className="bi bi-chevron-right"></i>{" "}
+                <a href="/contact">Accessibility Statement</a>
+              </li>
+            </ul>
+          </div>
 
           {/* <div className="col-lg-4 col-md-12">
             <h4>Follow Us</h4>

@@ -5,11 +5,11 @@ import { ContactDetailsSection } from ".";
 const ContactView = () => {
   return (
     <AppLayout>
-      <PageTitle
+      {/* <PageTitle
         title="Contact"
         description="Get in touch with us."
         currentPage="Contact"
-      />
+      /> */}
       <ContactDetailsSection />
     </AppLayout>
   );

@@ -5,11 +5,11 @@ import {ReportsDetailsSection} from ".";
 const ReportsView = () => {
   return (
     <AppLayout>
-      <PageTitle
+      {/* <PageTitle
         title="Reports"
         description="Our Yearly Reports"
         currentPage="Reports"
-      />
+      /> */}
       <ReportsDetailsSection />
     </AppLayout>
   );
