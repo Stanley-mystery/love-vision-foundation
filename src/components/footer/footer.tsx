@@ -61,15 +61,21 @@ const Footer = () => {
             <ul>
               <li>
                 <i className="bi bi-chevron-right"></i>{" "}
-                <a href="/">Privacy Policy</a>
+                <a href="https://tdjfoundation.org/wp-content/uploads/2025/04/TDJF-Privacy-Policy.pdf">
+                  Privacy Policy
+                </a>
               </li>
               <li>
                 <i className="bi bi-chevron-right"></i>{" "}
-                <a href="/gallery">Terms of Use</a>
+                <a href="https://tdjfoundation.org/wp-content/uploads/2025/04/TDJF-Terms-of-Use.pdf">
+                  Terms of Use
+                </a>
               </li>
               <li>
                 <i className="bi bi-chevron-right"></i>{" "}
-                <a href="/contact">Accessibility Statement</a>
+                <a href="https://tdjfoundation.org/wp-content/uploads/2025/04/Accessibility-Statement-for-The-T.D.-Jakes-Foundation-Website-2025.pdf">
+                  Accessibility Statement
+                </a>
               </li>
             </ul>
           </div>
