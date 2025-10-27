@@ -1,16 +1,10 @@
 const ContactDetailsSection = () => {
   return (
     <section id="contact" className="contact section">
-         <div
+      <div
         className="container section-title aos-init aos-animate"
         data-aos="fade-up"
-      >
-        <h2>Impact</h2>
-        <p>
-          <span>Other Impact</span>{" "}
-          <span className="description-title">Areas</span>
-        </p>
-      </div>
+      ></div>
       <div className="container form-container-overlap">
         <div
           className="row justify-content-center aos-init aos-animate"
@@ -18,7 +12,7 @@ const ContactDetailsSection = () => {
           data-aos-delay="300"
         >
           <div className="col-lg-10">
-            <div className="contact-form-wrapper">
+            <div className="contact-form-wrapper ">
               <h2 className="text-center text-white mb-4">
                 We will like to connect with you.
               </h2>

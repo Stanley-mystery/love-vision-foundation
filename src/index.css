@@ -1308,7 +1308,7 @@ section,
   background-color: var(--accent-color);
   border-radius: 12px;
   box-shadow: 0 5px 25px rgba(0, 0, 0, 0.05);
-  padding: 40px;
+  padding: 100px;
 }
 
 .contact .contact-form-wrapper h2 {
