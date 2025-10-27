@@ -1,4 +1,3 @@
-import { GallerySection } from "@/features/gallery/components";
 import {
   HomeAboutsSection,
   HomeClientsSection,
@@ -8,6 +7,7 @@ import {
   HomeHeroSection,
   HomeImpacts,
   QuickActionSection,
+  HomeGallerySection,
 } from ".";
 import AppLayout from "@/components/layouts/app-layout";
 import { DonatSection } from "@/features/donate/component";
@@ -23,7 +23,7 @@ function HomePageView() {
       <HomeClientsSection />
       <QuickActionSection />
       <DonatSection />
-      <GallerySection limit={10} showViewMore />
+      <HomeGallerySection />
     </AppLayout>
   );
 }

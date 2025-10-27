@@ -8,3 +8,4 @@ export { default as HomeTestimonialsSection } from "./home-testimonials-section"
 export { default as HomeClientsSection } from "./home-clients-section";
 export { default as HomeImpacts } from "./home-impacts";
 export { default as QuickActionSection } from "./quick-action-section";
+export { default as HomeGallerySection } from "./home-gallery-section";

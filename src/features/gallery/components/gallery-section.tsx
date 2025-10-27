@@ -4,7 +4,6 @@ import Isotope from "isotope-layout";
 import { Link } from "react-router-dom";
 
 // Import 22 images
-import GalleryImage1 from "@/assets/images/gallery/gallery1.jpg";
 import GalleryImage2 from "@/assets/images/gallery/gallery2.jpg";
 import GalleryImage3 from "@/assets/images/gallery/gallery3.jpg";
 import GalleryImage4 from "@/assets/images/gallery/gallery4.jpg";

@@ -1,3 +1,7 @@
+import Privacy from "@/assets/info/love-vision-privacy-policy.pdf";
+import Term from "@/assets/info/love-vision-term-of-use.pdf";
+import Accessibility from "@/assets/info/love-vision-accessibility-statement.pdf";
+
 const Footer = () => {
   return (
     <footer id="footer" className="footer position-relative dark-background">
@@ -60,20 +64,20 @@ const Footer = () => {
             <h4>Regulatory Information</h4>
             <ul>
               <li>
-                <i className="bi bi-chevron-right"></i>{" "}
-                <a href="https://tdjfoundation.org/wp-content/uploads/2025/04/TDJF-Privacy-Policy.pdf">
+                <i className="bi bi-chevron-right"></i>
+                <a href={Privacy} target="_blank">
                   Privacy Policy
                 </a>
               </li>
               <li>
-                <i className="bi bi-chevron-right"></i>{" "}
-                <a href="https://tdjfoundation.org/wp-content/uploads/2025/04/TDJF-Terms-of-Use.pdf">
+                <i className="bi bi-chevron-right"></i>
+                <a href={Term} target="_blank">
                   Terms of Use
                 </a>
               </li>
               <li>
-                <i className="bi bi-chevron-right"></i>{" "}
-                <a href="https://tdjfoundation.org/wp-content/uploads/2025/04/Accessibility-Statement-for-The-T.D.-Jakes-Foundation-Website-2025.pdf">
+                <i className="bi bi-chevron-right"></i>
+                <a href={Accessibility} target="_blank">
                   Accessibility Statement
                 </a>
               </li>
@@ -123,7 +127,7 @@ const Footer = () => {
             target="_blank"
             rel="noopener noreferrer
           "
-          className="text-decoration-none text-white"
+            className="text-decoration-none text-white"
           >
             © <span>Created by </span>
             <strong className="px-1 sitename">

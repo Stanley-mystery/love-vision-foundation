@@ -8,8 +8,8 @@ const HomePartnersProfileSection = () => {
       <section id="team" className="team section light-background">
         <div className="container section-title" data-aos="fade-up">
           <p>
-            <span>Growth</span>
-            <span className="description-title"> Partners</span>
+            <span>Meet the </span>
+            <span className="description-title"> Team</span>
           </p>
         </div>
 
