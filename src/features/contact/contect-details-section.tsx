@@ -1,31 +1,31 @@
-import React from "react";
+import React, { useState } from "react";
 
-const ContactDetailsSection = () => {
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    const formData = new FormData(e.currentTarget);
+const ContactDetailsSection: React.FC = () => {
+  const [result, setResult] = useState<string>("");
+
+  const onSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    const form = event.currentTarget;
+    const formData = new FormData(form);
+    formData.append("access_key", "5fdf0fd2-4231-4bad-b0ba-6e21c18b329c");
 
     try {
-      const res = await fetch(
-        "https://script.google.com/macros/s/AKfycby3XrQgsF6DxHs1A6Si6107ySmdAy2lkbR4BUDqMErFsWwYGd7Oao7aLc22nt5dkuhB/exec",
-        {
-          method: "POST",
-          body: new URLSearchParams({
-            name: formData.get("name") as string,
-            email: formData.get("email") as string,
-            subject: formData.get("subject") as string,
-            message: formData.get("message") as string,
-          }),
-        }
-      );
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData,
+      });
 
-      const data = await res.json();
-      console.log("Response:", data);
-      alert("✅ Message sent successfully!");
-      e.currentTarget.reset();
+      const data = await response.json();
+
+      if (data.success) {
+        setResult("✅ Message sent successfully!");
+        form.reset(); // ✅ properly resets form
+      } else {
+        setResult("❌ Something went wrong. Please try again.");
+      }
     } catch (error) {
       console.error("Error submitting form:", error);
-      alert("❌ Failed to send message. Please try again later.");
+      setResult("❌ Network error. Please try again later.");
     }
   };
 
@@ -45,10 +45,10 @@ const ContactDetailsSection = () => {
           <div className="col-lg-10">
             <div className="contact-form-wrapper">
               <h2 className="text-center text-white mb-4">
-                We will like to connect with you.
+                We would like to connect with you.
               </h2>
 
-              <form onSubmit={handleSubmit} className="php-email-form">
+              <form className="form" onSubmit={onSubmit}>
                 <div className="row g-3">
                   <div className="col-md-6">
                     <div className="form-group">
@@ -57,7 +57,7 @@ const ContactDetailsSection = () => {
                         <input
                           type="text"
                           className="form-control"
-                          name="name"
+                          name="Name"
                           placeholder="Name"
                           required
                         />
@@ -72,7 +72,7 @@ const ContactDetailsSection = () => {
                         <input
                           type="email"
                           className="form-control"
-                          name="email"
+                          name="Email"
                           placeholder="Email Address"
                           required
                         />
@@ -87,7 +87,7 @@ const ContactDetailsSection = () => {
                         <input
                           type="text"
                           className="form-control"
-                          name="subject"
+                          name="Subject"
                           placeholder="Subject"
                           required
                         />
@@ -101,7 +101,7 @@ const ContactDetailsSection = () => {
                         <i className="bi bi-chat-dots message-icon"></i>
                         <textarea
                           className="form-control"
-                          name="message"
+                          name="Message"
                           placeholder="Write Message..."
                           style={{ height: "180px" }}
                           required
@@ -118,6 +118,12 @@ const ContactDetailsSection = () => {
                       SEND MESSAGE
                     </button>
                   </div>
+
+                  {result && (
+                    <div className="col-12 text-center mt-3">
+                      <p className="text-white">{result}</p>
+                    </div>
+                  )}
                 </div>
               </form>
             </div>
