@@ -10,10 +10,15 @@ const Header: React.FC = () => {
   };
   const HeaderLinks = [
     { name: "Home", href: "/" },
-    { name: "Gallery", href: "/gallery" },
-    { name: "Reports", href: "/reports" },
-    { name: "Contact", href: "/contact" },
+    { name: "Our Impact", href: "/gallery" },
+    { name: "Impact Report", href: "/reports" },
+    { name: "Contact Us", href: "/contact" },
   ];
+  //   Change Gallery to Our Impact
+
+  // Replace Reports With Impact Report
+
+  // Replace contact with Contact Us
 
   useEffect(() => {
     const handleScroll = () => {

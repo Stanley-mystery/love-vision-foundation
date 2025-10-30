@@ -8,7 +8,7 @@ const HomeMainAboutSection = () => {
         className="container section-title aos-init aos-animate"
         data-aos="fade-up"
       >
-        <h2>About</h2>
+        <h2>Who We Are</h2>
         <p>
           <span>Find Out More</span>{" "}
           <span className="description-title">
@@ -44,7 +44,7 @@ const HomeMainAboutSection = () => {
             data-aos-delay="200"
           >
             <div className="about-content ps-0 ps-lg-3">
-              <h3>About Love Vision Foundation</h3>
+              {/* <h3>About Love Vision Foundation</h3> */}
               <p className="fst-italic">
                 Love Vision Foundation was birthed in 2021 as a divine platform
                 through which God desired to reach His people. From the

@@ -110,7 +110,7 @@ const HomePartnersProfileModal = () => {
                   alt="Olufunbi Adebari"
                 />
                 <h5 className="fw-bold mb-0">
-                  Project Manager &amp; Technology Expert
+                  Programme Manager &amp; Technology Expert
                 </h5>
               </div>
 

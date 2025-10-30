@@ -31,7 +31,7 @@ const Footer = () => {
 
       <div className="container footer-top">
         <div className="row gy-4 justify-content-center">
-          <div className="col-lg-4 col-md-6 footer-about">
+          <div className="col-lg-2 col-md-4  footer-about">
             <a href="index.html" className="d-flex align-items-center">
               <span className="sitename">Love Vision Foundation</span>
             </a>
@@ -44,7 +44,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="col-lg-2 col-md-3 footer-links">
+          <div className="col-lg-2 col-md-4 footer-links">
             <h4>Useful Links</h4>
             <ul>
               <li>

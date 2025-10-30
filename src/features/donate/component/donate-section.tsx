@@ -1,4 +1,6 @@
 import { useEffect } from "react";
+import ImpactReport2 from "@/assets/reports/impact-report2.pdf";
+import homeAbout1 from "@/assets/images/homeAbout1.jpg";
 
 declare global {
   interface Window {
@@ -109,38 +111,31 @@ const DonatSection = () => {
             data-aos="fade-up"
             data-aos-delay="200"
           >
-            <h3 className="mb-3 text-white">Making Vision Accessible to All</h3>
-            <p className="fst-italic mb-4 text-light">
-              “Using our gifts and influence as a tool to uplift lives and
-              communities.” — <strong>Love Vision Foundation</strong>
-            </p>
-
-            <ul className="ps-0">
-              <li className="d-flex align-items-start mb-3">
-                <i className="bi bi-check-circle me-2 text-white"></i>
-                <span>
-                  Free eye tests, treatments, and surgeries for the less
-                  privileged.
-                </span>
-              </li>
-              <li className="d-flex align-items-start mb-3">
-                <i className="bi bi-check-circle me-2 text-white"></i>
-                <span>Vision care education and outreach programs.</span>
-              </li>
-              <li className="d-flex align-items-start mb-3">
-                <i className="bi bi-check-circle me-2 text-white"></i>
-                <span>
-                  Support for families and communities affected by visual
-                  impairment.
-                </span>
-              </li>
-            </ul>
-
-            <p className="mt-4 text-light">
-              Whether it’s a one-time gift or a recurring contribution, your
-              support changes lives. No amount is too small to make a
-              difference.
-            </p>
+            <div className="department-card">
+              <div className="department-image">
+                <img
+                  src={homeAbout1}
+                  alt="August 2025 Impact Report"
+                  className="img-fluid"
+                />
+              </div>
+              <div className="department-content">
+                <div className="department-icon">
+                  <i className="fas fa-eye"></i>
+                </div>
+                <h3>August 2025 Impact Report</h3>
+                <p className="text-dark">
+                  Take a look at the incredible milestones achieved in August
+                  2025 — from restored vision to renewed hope, made possible
+                  through your continued support and our shared mission to serve
+                  with love.
+                </p>
+                <a href={ImpactReport2} download className="btn-learn-more">
+                  <span>Download Report</span>
+                  <i className="fas fa-download ms-2"></i>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>

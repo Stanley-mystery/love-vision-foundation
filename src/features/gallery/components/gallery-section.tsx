@@ -157,9 +157,23 @@ const GallerySection: React.FC<GallerySectionProps> = ({
 
   return (
     <section id="gallery" className="gallery section py-5">
+      <div
+        className="container section-title aos-init aos-animate"
+        data-aos="fade-up"
+      >
+        {/* <h2>Our Partners</h2> */}
+        <p>
+          <span>Feel Our</span>{" "}
+          <span className="description-title">Impact</span>
+        </p>
+        <span>
+          Disclaimer: <br />
+          The individuals appearing in this images/video have provided full
+          consent <br /> for the use of their images, videos and likeness for
+          promotional and distribution purposes.
+        </span>
+      </div>
       <div className="container" data-aos="fade-up" data-aos-delay="100">
-        <h2 className="text-center mb-5 fw-semibold">Our Gallery</h2>
-
         {/* Gallery Grid */}
         <div
           className="row gallery-grid isotope-container"
@@ -179,6 +193,19 @@ const GallerySection: React.FC<GallerySectionProps> = ({
             </Link>
           </div>
         )}
+      </div>
+
+      <div
+        className="container section-title aos-init aos-animate"
+        data-aos="fade-up"
+      >
+        <span>
+          All photos featured in this gallery are shared with the full consent
+          of the individuals Depicted in the images.<br/> Each image represents real
+          stories of love and faith, shared voluntarily as part of the Love
+          Vision Foundation. <br/> Unauthorized use, reproduction, or distribution of
+          these images is strictly prohibited.
+        </span>
       </div>
     </section>
   );

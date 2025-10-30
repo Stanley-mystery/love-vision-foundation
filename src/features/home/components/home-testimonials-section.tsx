@@ -9,7 +9,7 @@ const testimonials = [
   },
   {
     name: "Matthew 6:22 NLT",
-    text: "We uphold the belief that our God-given gifts and influence that should be used to restore sight, bring hope, and uplift lives through the love and acceptance of Christ his son.",
+    text: "Your eye is like a lamp that provides light for your body. When your eye is healthy, your whole body is filled with light.",
   },
 ];
 

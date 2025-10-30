@@ -1297,7 +1297,6 @@ section,
 
 .contact .form-container-overlap {
   position: relative;
-  margin-top: -150px;
   margin-bottom: 60px;
   z-index: 10;
 }
@@ -1919,7 +1918,7 @@ section,
 .home-about .image-grid {
   position: relative;
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  /* grid-template-columns: 2fr 1fr; */
   gap: 1.5rem;
   height: 500px;
 }
@@ -3046,7 +3045,7 @@ section,
 
 .contact .php-email-form button[type="submit"]:hover {
   background: color-mix(in srgb, var(--contrast-color), transparent 25%);
-}/*--------------------------------------------------------------
+} /*--------------------------------------------------------------
 # About Us Section (Enhanced)
 --------------------------------------------------------------*/
 .about-us .content h3 {
@@ -3287,7 +3286,23 @@ section,
   height: 100%;
 }
 
+.department-card {
+  background: var(--surface-color);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px
+    color-mix(in srgb, var(--default-color), transparent 85%);
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
 .featured-departments .department-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px
+    color-mix(in srgb, var(--default-color), transparent 75%);
+}
+
+.department-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 15px 30px
     color-mix(in srgb, var(--default-color), transparent 75%);
@@ -3299,7 +3314,20 @@ section,
   overflow: hidden;
 }
 
+.department-image {
+  position: relative;
+  height: 350px;
+  overflow: hidden;
+}
+
 .featured-departments .department-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.department-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -3310,12 +3338,37 @@ section,
   transform: scale(1.05);
 }
 
+.department-card:hover .department-image img {
+  transform: scale(1.05);
+}
+
 .featured-departments .department-content {
   padding: 30px;
   position: relative;
 }
 
+.department-content {
+  padding: 30px;
+  height: 300px;
+  position: relative;
+}
+
 .featured-departments .department-icon {
+  position: absolute;
+  top: -30px;
+  left: 30px;
+  width: 60px;
+  height: 60px;
+  background: var(--accent-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 5px 15px
+    color-mix(in srgb, var(--accent-color), transparent 40%);
+}
+
+.department-icon {
   position: absolute;
   top: -30px;
   left: 30px;
@@ -3335,12 +3388,18 @@ section,
   color: var(--contrast-color);
 }
 
+.department-icon i {
+  font-size: 24px;
+  color: var(--contrast-color);
+}
+
 .featured-departments h3 {
   font-size: 24px;
   font-weight: 700;
   margin: 40px 0 15px 0;
   color: var(--heading-color);
 }
+
 
 .featured-departments p {
   color: color-mix(in srgb, var(--default-color), transparent 20%);
@@ -3352,6 +3411,18 @@ section,
 .featured-departments .btn-learn-more {
   display: inline-flex;
   align-items: center;
+
+  gap: 8px;
+  color: var(--accent-color);
+  font-weight: 600;
+  font-size: 14px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.btn-learn-more {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 1rem;
   gap: 8px;
   color: var(--accent-color);
   font-weight: 600;
@@ -3363,8 +3434,15 @@ section,
 .featured-departments .btn-learn-more span {
   transition: transform 0.3s ease;
 }
+.btn-learn-more span {
+  transition: transform 0.3s ease;
+}
 
 .featured-departments .btn-learn-more i {
+  font-size: 16px;
+  transition: transform 0.3s ease;
+}
+.btn-learn-more i {
   font-size: 16px;
   transition: transform 0.3s ease;
 }
@@ -3373,11 +3451,22 @@ section,
   color: color-mix(in srgb, var(--accent-color), transparent 20%);
 }
 
+.btn-learn-more:hover {
+  color: color-mix(in srgb, var(--accent-color), transparent 20%);
+}
+
 .featured-departments .btn-learn-more:hover span {
   transform: translateX(3px);
 }
 
+.btn-learn-more:hover span {
+  transform: translateX(3px);
+}
+
 .featured-departments .btn-learn-more:hover i {
+  transform: translateX(3px);
+}
+.btn-learn-more:hover i {
   transform: translateX(3px);
 }
 

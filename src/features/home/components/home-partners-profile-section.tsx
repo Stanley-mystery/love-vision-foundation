@@ -85,7 +85,7 @@ const HomePartnersProfileSection = () => {
                 </div>
                 <div className="member-info text-center mt-3">
                   <h4>Olufunbi Adebari</h4>
-                  <span>Project Manager</span>
+                  <span>Programme Manager</span>
                   <button
                     className="btn btn-outline-primary btn-sm mt-2"
                     data-bs-toggle="modal"

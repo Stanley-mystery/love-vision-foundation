@@ -61,38 +61,6 @@ const ReportsDetailsSection = () => {
               </div>
             </div>
           </div>
-
-          {/* July 2025 Report */}
-          <div
-            className="col-lg-4 col-md-6 aos-init aos-animate"
-            data-aos="fade-up"
-            data-aos-delay="200"
-          >
-            <div className="department-card">
-              <div className="department-image">
-                <img
-                  src={homeAbout2}
-                  alt="July 2025 Impact Report"
-                  className="img-fluid"
-                />
-              </div>
-              <div className="department-content">
-                <div className="department-icon">
-                  <i className="fas fa-heart"></i>
-                </div>
-                <h3>July 2025 Impact Report</h3>
-                <p>
-                  Explore how lives were transformed in July 2025 — from sight
-                  restoration programs to life-changing outreach missions that
-                  continue to bring healing and hope to those in need.
-                </p>
-                <a href={ImpactReport1} download className="btn-learn-more">
-                  <span>Download Report</span>
-                  <i className="fas fa-download ms-2"></i>
-                </a>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </section>

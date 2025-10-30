@@ -23,7 +23,7 @@ const HomeAboutSection = () => {
             data-aos-delay="150"
           >
             <h2 className="">
-              Committed to Offering the Best in Vision Health
+              Committed to Offering Access to Vision Health Resources
             </h2>
             <p className="lead-description">
               Give the Gift of Sight – Free Cataract & Glaucoma Surgeries. Your
@@ -56,7 +56,7 @@ const HomeAboutSection = () => {
                   <span>Restoring Sight</span>
                 </div>
               </div>
-              <div className="secondary-images">
+              {/* <div className="secondary-images">
                 <div className="small-image">
                   <img
                     src={Image2}
@@ -71,7 +71,7 @@ const HomeAboutSection = () => {
                     className="img-fluid"
                   />
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
 
@@ -132,7 +132,7 @@ const HomeAboutSection = () => {
                     <span
                       className="purecounter"
                       data-purecounter-start="0"
-                      data-purecounter-end="20"
+                      data-purecounter-end="30"
                       data-purecounter-duration="2"
                     ></span>
                     +
@@ -154,7 +154,6 @@ const HomeAboutSection = () => {
           </div>
         </div>
       </div>
-      
     </section>
   );
 };

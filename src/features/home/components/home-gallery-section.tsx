@@ -51,6 +51,16 @@ const HomeGallerySection: React.FC = () => {
   return (
     <section id="gallery-slider" className="gallery-slider section py-5">
       <div
+        className="container section-title aos-init aos-animate"
+        data-aos="fade-up"
+      >
+        {/* <h2>Our Partners</h2> */}
+        <p>
+          <span>Feel Our</span>{" "}
+          <span className="description-title">Impact</span>
+        </p>
+      </div>
+      <div
         className="container aos-init aos-animate"
         data-aos="fade-up"
         data-aos-delay="100"
@@ -120,7 +130,9 @@ const HomeGallerySection: React.FC = () => {
       </div>
       <div className="container">
         <div className="section-title aos-init aos-animate" data-aos="fade-up">
-          <a href="/gallery" className="btn btn-outline-primary">View More <i className="bi bi-arrow-right"></i></a>
+          <a href="/gallery" className="btn btn-outline-primary">
+            View More <i className="bi bi-arrow-right"></i>
+          </a>
         </div>
       </div>
     </section>

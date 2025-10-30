@@ -37,7 +37,7 @@ const HomeHeroSection = () => {
                       data-aos-delay="200"
                       className="aos-init aos-animate"
                     >
-                      A Channel of Blessing and Restoration
+                      A Channel of Blessing<br/> and Restoration
                     </h1>
 
                     <p
@@ -45,13 +45,12 @@ const HomeHeroSection = () => {
                       data-aos-delay="250"
                       className="aos-init aos-animate"
                     >
-                      A clear mandate: to be a channel of blessing and
-                      restoration to individuals facing vision challenges. Using
-                      our gifts and influence as a tool to uplift lives and
-                      communities through dedication to ensuring the foundation
-                      fulfills its God-given mandate of restoring sight,
-                      bringing hope, and transforming lives through practical
-                      support and the love of Christ.
+                      We have a clear mandate to be a channel of blessing and
+                      restoration to individuals facing vision challenges. We
+                      use our gifts and influence to ensure that Love Vision
+                      Foundation fulfills its God-given mandate of restoring
+                      sight, bringing hope, and transforming lives through
+                      practical support and the love of Christ.
                     </p>
 
                     <div

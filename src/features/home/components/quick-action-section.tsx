@@ -27,29 +27,19 @@ const QuickActionSection = () => {
                 <h4>Need Cataract or Glaucoma Surgery?</h4>
                 <p>
                   If you know anyone who needs cataract or glaucoma surgery,
-                  click below to book an appointment with our partner or fill
-                  out the contact form.
+                  click below to fill out the contact form.
                 </p>
 
                 <div className="d-flex flex-wrap gap-2 mt-3">
                   <a
-                    href="https://eyefoundationhospital.com/"
-                    target="_blank"
-                    className="btn btn-outline-primary me-2"
-                    aria-label="Book an Appointment"
-                  >
-                    <i className="bi bi-calendar-check me-2"></i>
-                    Book an Appointment
-                  </a>
-
-                  <button
+                    href="/contact"
                     type="button"
                     className="btn btn-outline-primary"
                     aria-label="Contact Us"
                   >
                     <i className="bi bi-telephone-plus-fill me-2"></i>
                     Contact Us
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>
