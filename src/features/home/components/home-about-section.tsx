@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import Image1 from "@/assets/images/homeAbout1.jpg";
-import Image2 from "@/assets/images/homeAbout2.jpg";
-import Image3 from "@/assets/images/homeAbout3.jpg";
+// import Image2 from "@/assets/images/homeAbout2.jpg";
+// import Image3 from "@/assets/images/homeAbout3.jpg";
 import PureCounter from "@srexi/purecounterjs";
 
 const HomeAboutSection = () => {

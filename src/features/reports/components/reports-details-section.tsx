@@ -1,6 +1,6 @@
 import homeAbout1 from "@/assets/images/homeAbout1.jpg";
-import homeAbout2 from "@/assets/images/homeAbout2.jpg";
-import ImpactReport1 from "@/assets/reports/impact-report1.pdf";
+// import homeAbout2 from "@/assets/images/homeAbout2.jpg";
+// import ImpactReport1 from "@/assets/reports/impact-report1.pdf";
 import ImpactReport2 from "@/assets/reports/impact-report2.pdf";
 
 const ReportsDetailsSection = () => {

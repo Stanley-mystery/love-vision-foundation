@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { QuickActionSection } from "../home/components";
+// import { QuickActionSection } from "../home/components";
 
 const ContactDetailsSection: React.FC = () => {
   const [result, setResult] = useState<string>("");
