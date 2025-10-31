@@ -41,42 +41,42 @@ const DonatSection = () => {
       <div className="container">
         <div
           className="row gy-5 border rounded-4 shadow-lg p-4 align-items-center"
-          style={{
-            background:
-              "linear-gradient(135deg, var(--accent-color) 0%, #4c6ef5 100%)",
-            color: "white",
-          }}
+          // style={{
+          //   background:
+          //     "linear-gradient(135deg, var(--accent-color) 0%, #4c6ef5 100%)",
+          //   color: "white",
+          // }}
           data-aos="fade-up"
         >
           {/* Payment Card */}
           <div
-            className="col-lg-6 order-1 order-lg-2"
+            className="col-lg-5 order-1 order-lg-2"
             data-aos="fade-up"
             data-aos-delay="100"
           >
             <div
               className="paypal-card h-100"
-              style={{
-                background: "rgba(255, 255, 255, 0.08)",
-                color: "#fff",
-                borderRadius: "16px",
-                padding: "2rem",
-                boxShadow: "0 8px 25px rgba(0, 0, 0, 0.25)",
-                backdropFilter: "blur(8px)",
-                border: "1px solid rgba(255,255,255,0.15)",
-                transition: "all 0.3s ease",
-              }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.transform = "translateY(-5px)";
-                e.currentTarget.style.boxShadow =
-                  "0 12px 35px rgba(0,0,0,0.35)";
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.transform = "translateY(0)";
-                e.currentTarget.style.boxShadow = "0 8px 25px rgba(0,0,0,0.25)";
-              }}
+              // style={{
+              //   background: "rgba(255, 255, 255, 0.08)",
+              //   color: "#fff",
+              //   borderRadius: "16px",
+              //   padding: "2rem",
+              //   boxShadow: "0 8px 25px rgba(0, 0, 0, 0.25)",
+              //   backdropFilter: "blur(8px)",
+              //   border: "1px solid rgba(255,255,255,0.15)",
+              //   transition: "all 0.3s ease",
+              // }}
+              // onMouseEnter={(e) => {
+              //   e.currentTarget.style.transform = "translateY(-5px)";
+              //   e.currentTarget.style.boxShadow =
+              //     "0 12px 35px rgba(0,0,0,0.35)";
+              // }}
+              // onMouseLeave={(e) => {
+              //   e.currentTarget.style.transform = "translateY(0)";
+              //   e.currentTarget.style.boxShadow = "0 8px 25px rgba(0,0,0,0.25)";
+              // }}
             >
-              <h4 className="fw-semibold mb-3 text-white">
+              {/* <h4 className="fw-semibold mb-3 text-white">
                 Support the Cause 💙
               </h4>
               <p
@@ -84,7 +84,7 @@ const DonatSection = () => {
               >
                 Your donations go directly toward providing free eye care,
                 surgeries, and educational programs for underserved communities.
-              </p>
+              </p> */}
 
               <div
                 id="paypal-container-D23CSCSWX4NDW"
@@ -96,18 +96,18 @@ const DonatSection = () => {
                 }}
               ></div>
 
-              <small
+              {/* <small
                 className="d-block mt-3 text-light"
                 style={{ opacity: 0.7 }}
               >
                 Your transaction is secure and encrypted.
-              </small>
+              </small> */}
             </div>
           </div>
 
           {/* Content */}
           <div
-            className="col-lg-6 order-2 order-lg-1 content"
+            className="col-lg-7 order-2 order-lg-1 content"
             data-aos="fade-up"
             data-aos-delay="200"
           >

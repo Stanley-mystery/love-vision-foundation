@@ -29,22 +29,22 @@ const Footer = () => {
         </div>
       </div>  */}
 
-      <div className="container footer-top">
+      <div className="container-fluid footer-top">
         <div className="row gy-4 justify-content-center">
-          <div className="col-lg-2 col-md-4  footer-about">
+          <div className="col-lg-4 col-md-6 footer-about">
             <a href="index.html" className="d-flex align-items-center">
               <span className="sitename">Love Vision Foundation</span>
             </a>
-            <div className="footer-contact pt-3">
+            <div className="footer-contact">
               {/* <p>A108 Adam Street</p>
               <p>New York, NY 535022</p> */}
-              <p className="mt-3">
+              <p className="">
                 Together, we can bring light back into someone’s world.
               </p>
             </div>
           </div>
 
-          <div className="col-lg-2 col-md-4 footer-links">
+          <div className="col-lg-2 col-md-3 footer-links">
             <h4>Useful Links</h4>
             <ul>
               <li>
