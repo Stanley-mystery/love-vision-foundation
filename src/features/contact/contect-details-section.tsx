@@ -120,6 +120,29 @@ const ContactDetailsSection: React.FC = () => {
                     <div className="col-md-12">
                       <div className="form-group">
                         <div className="input-with-icon">
+                          <i className="bi bi-envelope"></i>
+                          <select
+                            className="form-control"
+                            name="interest"
+                            required
+                          >
+                            <option value="" disabled>
+                              What are you interested in?
+                            </option>
+                            <option value="Partner">Partner</option>
+                            <option value="Donate">Donate</option>
+                            <option value="Services">Services</option>
+                            <option value="General Massages">
+                              General Massages
+                            </option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="col-md-12">
+                      <div className="form-group">
+                        <div className="input-with-icon">
                           <i className="bi bi-text-left"></i>
                           <input
                             type="text"
