@@ -10,7 +10,6 @@ import {
   HomeGallerySection,
 } from ".";
 import AppLayout from "@/components/layouts/app-layout";
-import { DonatSection } from "@/features/donate/component";
 function HomePageView() {
   return (
     <AppLayout>
@@ -22,7 +21,7 @@ function HomePageView() {
       <HomeTestimonialsSection />
       <HomeClientsSection />
       <QuickActionSection />
-      <DonatSection />
+      {/* <DonatSection /> */}
       <HomeGallerySection />
     </AppLayout>
   );

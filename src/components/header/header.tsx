@@ -73,7 +73,7 @@ const Header: React.FC = () => {
           ></i>
         </nav>
 
-        <a className="btn-getstarted" href="/donate">
+        <a className="btn-getstarted" href="https://www.paypal.com/donate/?hosted_button_id=7WXH2C7VMETX4">
           <i className="bi bi-heart-fill me-2"></i>
           Donate
         </a>

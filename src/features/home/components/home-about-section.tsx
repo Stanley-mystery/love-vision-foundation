@@ -146,7 +146,7 @@ const HomeAboutSection = () => {
                 <a href="#about" className="btn-explore">
                   Learn More
                 </a>
-                <a href="/donate" className="btn-contact">
+                <a href="https://www.paypal.com/donate/?hosted_button_id=7WXH2C7VMETX4" className="btn-contact">
                   <i className="bi bi-heart"></i> Donate Now
                 </a>
               </div>

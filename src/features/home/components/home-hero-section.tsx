@@ -61,7 +61,7 @@ const HomeHeroSection = () => {
                       <a href="#about" className="btn btn-primary">
                         Learn More About Our Mission
                       </a>
-                      <a href="/donate" className="btn btn-outline">
+                      <a href="https://www.paypal.com/donate/?hosted_button_id=7WXH2C7VMETX4" className="btn btn-outline">
                         Support the Cause
                       </a>
                     </div>
